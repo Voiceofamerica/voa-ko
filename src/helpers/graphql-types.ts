@@ -4,9 +4,12 @@
 export enum Audience {
   en = "en",
   enus = "enus",
+  fa = "fa",
+  ko = "ko",
+  ur = "ur",
+  vi = "vi",
   zhcn = "zhcn",
   zhtw = "zhtw",
-  fa = "fa",
 }
 
 

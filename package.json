@@ -62,7 +62,7 @@
     "@types/redux-thunk": "^2.1.0",
     "@types/webpack-env": "^1.13.2",
     "@voiceofamerica/cordova-plugin-music-controls": "^3.0.5",
-    "@voiceofamerica/voa-core-shared": "^1.54.0",
+    "@voiceofamerica/voa-core-shared": "^1.55.0",
     "@voiceofamerica/voa-shared": "^2.2.0",
     "adobe-mobile-services": "^4.13.1-cor",
     "android-versions": "^1.2.1",

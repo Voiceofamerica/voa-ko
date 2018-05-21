@@ -8,9 +8,9 @@ import { setDirection } from '@voiceofamerica/voa-shared/helpers/textDirectionHe
 import { Audience } from 'helpers/graphql-types'
 
 setAnalyticsOptions({
-  language: 'english',
-  languageService: 'english',
-  propertyName: 'english',
+  language: 'Korean',
+  languageService: 'VOA Korea Service',
+  propertyName: 'Korean',
   propertyId: 'something',
   rsidAccount: 'something',
   reportSuite: 'something',
@@ -19,121 +19,111 @@ setDirection('ltr')
 
 export const graphqlAudience = Audience.enus
 
-moment.locale('en-us')
+moment.locale('ko')
 
 export const articleLabels = {
-  updatedOn: (date: string) => `Updated on ${date}`,
-  relatedContent: 'Related stories',
-  shareMessage: '',
-  galleryLoading: 'Gallery loading...',
+  updatedOn: (date: string) => `입력 ${date}`,
+  relatedContent: '관련 뉴스',
+  shareMessage: '뉴스 보기',
+  galleryLoading: '로딩 중',
 }
 
 export const categorySettingsLabels = {
-  header: 'Choose Categories',
-  myCategories: 'My Categories',
-  allCategories: 'All Categories',
-  dragAndDrop: 'Drag Categories',
-  headlinesFirst: 'Headline Category is First',
+  header: '카테고리 순서 변경',
+  myCategories: '맞춤 카테고리',
+  allCategories: '전체 카테고리',
+  dragAndDrop: '원하는 카테고리를 이곳으로 이동하세요',
+  headlinesFirst: '주요 뉴스 위치',
+  cancel: '취소',
 }
 
 export const circumventionDrawerLabels = {
   content: (
     <div>
-      Your connection is secured via a VPN.
+      VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
     </div>
   ),
 }
 
 export const editorsChoiceLabels = {
-  header: 'Editor\'s Choice',
+  header: '추천 콘텐츠',
+  empty: '추천 콘텐츠를 준비 중입니다',
 }
 
 export const errorBoundaryLabels = {
-  error: 'An error occurred.',
-  retry: 'Retry',
+  error: '오류가 발생했습니다',
+  retry: '재시도',
 }
 
 export const favoritesSettingsLabels = {
-  header: 'My Favorites',
-  removeAll: 'Remove All Favorites',
+  header: '스크랩',
+  removeAll: '모두 지우기',
 }
 
 export const homeLabels = {
-  headlines: 'Headlines',
-  search: 'Search',
+  headlines: '주요 뉴스',
+  search: '검색',
   manage: '+',
 }
 
 export const introLabels = {
-  content: 'Welcome to Voice of America!',
-  continue: 'Continue',
-}
-
-const hilight: React.CSSProperties = {
-  color: '#0162B1',
+  content: 'VOA 한국어 방송의 뉴스와 다양한 콘텐츠를 쉽고 빠르게 전해드립니다.',
+  continue: '계속',
 }
 
 export const mediaPlayerLabels = {
   empty: (
     <div>
       <p>
-        This is VoA's <span style={hilight}>multimedia</span> player. When you play audio or video content, it will play here.
-      </p>
-      <p>
-        You can continue to navigate the app without stopping the <span style={hilight}>multimedia</span> by closing the drawer.
-      </p>
-      <p>
-        Use the round <span style={hilight}>multimedia</span> button at the bottom of the screen to open this screen again.
-      </p>
-      <p>
-        You can also start and stop the <span style={hilight}>multimedia</span> by pressing the button at the bottom while this screen is open.
+        선택한 오디오/비디오를 재생하는 곳입니다.
+        뉴스 본문을 읽는 동안 재생 중인 오디오/비디오 창을 끌어내려서 닫았다가, 원할 때 다시 열어서 계속 재생할 수 있습니다.
       </p>
     </div>
   ),
-  loading: 'Loading media...',
+  loading: '로딩 중',
 }
 
 export const mediaSettingsLabels = {
-  normalSpeed: '1x',
-  halfAgainSpeed: '1.5x',
-  doubleSpeed: '2x',
-  chooseSpeed: 'Media playback speed',
+  normalSpeed: '정상',
+  halfAgainSpeed: '1.5',
+  doubleSpeed: '2배속',
+  chooseSpeed: '재생 속도',
 }
 
 export const programsScreenLabels = {
   videos: 'Video',
   audio: 'Audio',
-  empty: 'No content',
+  empty: '콘텐츠를 준비 중입니다',
 }
 
 export const pullToRefreshLabels = {
-  pull: 'Pull to refresh',
-  release: 'Release to refresh',
+  pull: '화면 끌어내려서 새로 고침',
+  release: '화면 끌어내려서 새로 고침',
 }
 
 export const searchLabels = {
-  header: 'Search',
-  back: 'Back',
-  all: 'All',
-  query: 'Search',
-  empty: 'No content',
+  header: '검색',
+  back: '돌아가기',
+  all: '전체',
+  query: '검색',
+  empty: '검색 결과가 없습니다',
 }
 
 export const settingsLabels = {
-  header: 'My Settings',
-  panic: 'Reset the App',
-  sendToFriends: 'Share with friends',
-  sendFeedback: 'Send us feedback',
-  aboutVoa: 'The Voice of America (VOA) publishes accurate, balanced, and comprehensive news and information to an international audience. It started in 1942 as a radio news service for people living in closed and war-torn societies and has since grown into a multimedia news operation. VOA now reaches people on web, mobile devices and social media in more than 40 languages.',
-  feedbackEmail: 'app@voanews.com',
-  feedbackSubject: encodeURIComponent('VOA Mobile App'),
-  feedbackBody: encodeURIComponent(''),
-  shareMessage: 'Check out the VOA mobile app',
+  header: '개인 설정',
+  panic: '초기 설정 돌아가기',
+  sendToFriends: '앱 공유하기',
+  sendFeedback: '의견 보내기',
+  aboutVoa: 'Voice of America, VOA는 미국 연방정부가 운영하는 국제방송으로, 1942년 첫 전파를 송출한 이래, 전 세계 40여 개 언어로 신뢰성 있는 뉴스와 정보를 전달해드리고 있습니다.',
+  feedbackEmail: 'korea@voanews.com',
+  feedbackSubject: encodeURIComponent('VOA 뉴스 앱 의견 보내기'),
+  feedbackBody: encodeURIComponent('VOA 뉴스 앱에 보내는 의견:\n'),
+  shareMessage: 'VOA 뉴스 앱을 추천합니다',
 }
 
 export const textSettingsLabels = {
-  textSize: 'Article font size',
-  normalSize: '1x',
-  largeSize: '1.5x',
-  hugeSize: '2x',
+  textSize: '글자 크기 설정',
+  normalSize: '작게',
+  largeSize: '보통',
+  hugeSize: '크게',
 }

@@ -7,7 +7,7 @@ import { connect, Dispatch } from 'react-redux'
 import * as moment from 'moment'
 
 import { ThemeConsumer, FullTheme } from '@voiceofamerica/voa-shared/components/ThemeProvider'
-import LargeCardList from '@voiceofamerica/voa-shared/components/LargeCardList'
+import { StaticLargeCardList } from '@voiceofamerica/voa-shared/components/LargeCardList'
 import { ListItem } from '@voiceofamerica/voa-shared/helpers/itemListHelper'
 import { GetArticleQuery } from 'helpers/graphql-types'
 import { generatePDF } from 'helpers/articlePrinter'
@@ -36,7 +36,7 @@ class ArticleCollection extends React.Component<Props> {
               {
                 (client) => {
                   return (
-                    <LargeCardList.Static
+                    <StaticLargeCardList
                       items={items}
                       onItemClick={this.goToArticle}
                       iconButtons={[

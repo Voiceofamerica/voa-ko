@@ -21,8 +21,8 @@ const DEFAULT = VIDEO
 
 const PROGRAM_ZONES: Category[] = [
   {
-    id: 5302,
-    name: 'VOA Connect',
+    id: 0,
+    name: '전체 프로그램',
   },
 ]
 

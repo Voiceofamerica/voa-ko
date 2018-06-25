@@ -24,7 +24,6 @@ import MainBottomNav from 'containers/MainBottomNav'
 import ErrorBoundary from 'components/ErrorBoundary'
 import Loader from 'components/Loader'
 import { graphqlAudience, articleLabels } from 'labels'
-import { audio as audioSvg, back, share, favorite, download, video as videoSvg } from '../../svg'
 
 import AppState from 'types/AppState'
 
@@ -102,18 +101,18 @@ class ArticleRouteBase extends React.Component<Props, State> {
       <MainBottomNav
         left={[
           <IconItem key={0} onClick={() => history.goBack()}>
-            <SvgIcon src={back} className={icon} />
+            <SvgIcon src='back' className={icon} />
           </IconItem>,
           <IconItem key={1} onClick={this.share}>
-            <SvgIcon src={share} className={icon} />
+            <SvgIcon src='share' className={icon} />
           </IconItem>,
         ]}
         right={[
           <IconItem key={0} onClick={this.toggleFavorite}>
-            <SvgIcon src={favorite} className={favoriteIconClass} />
+            <SvgIcon src='favorite' className={favoriteIconClass} />
           </IconItem>,
           <IconItem key={1} onClick={this.download}>
-            <SvgIcon src={download} className={icon} />
+            <SvgIcon src='download' className={icon} />
           </IconItem>,
         ]}
       />
@@ -195,7 +194,7 @@ class ArticleRouteBase extends React.Component<Props, State> {
         className={mediaButton}
         onClick={onClick}
       >
-        <SvgIcon src={videoSvg} className={mediaButtonIcon} />
+        <SvgIcon src='video' className={mediaButtonIcon} />
       </div>
     )
   }
@@ -226,7 +225,7 @@ class ArticleRouteBase extends React.Component<Props, State> {
         className={mediaButton}
         onClick={onClick}
       >
-        <SvgIcon src={audioSvg} className={mediaButtonIcon}/>
+        <SvgIcon src='audio' className={mediaButtonIcon}/>
       </div>
     )
   }

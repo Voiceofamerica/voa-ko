@@ -12,6 +12,7 @@ import Intro from 'containers/Intro'
 import client from 'helpers/graphql-client'
 import { showControls } from '@voiceofamerica/voa-shared/helpers/mediaControlHelper'
 import { scheduleDaily } from 'helpers/localNotifications'
+import { setPsiphonConfig, start } from '@voiceofamerica/voa-shared/helpers/psiphonHelper'
 import { deviceIsReady } from '@voiceofamerica/voa-shared/helpers/cordovaHelper'
 
 import { app } from './App.scss'
@@ -26,13 +27,29 @@ export default class App extends React.Component<{}, State> {
   }
 
   componentDidMount () {
-    renderReady.then(() => {
+    renderReady
+    .then(() => {
+      if (__HOST__) {
+        return null
+      } else {
+        return deviceIsReady
+      }
+    })
+    .then(() => {
       const appState = store.getState()
       if (appState.settings.dailyNotificationOn) {
         scheduleDaily().catch(err => console.error(err))
       }
 
-      if (!__HOST__) {
+      console.log('psiphon enabled?', appState.settings.psiphonEnabled)
+      if (appState.settings.psiphonEnabled) {
+        setPsiphonConfig(require('../../psiphon_config.json'))
+        start()
+          .then(this.ready)
+          .catch(err => {
+            console.error('FATAL: psiphon failed to start correctly', err)
+          })
+      } else if (!__HOST__) {
         deviceIsReady
           .then(this.ready)
           .catch(err => {

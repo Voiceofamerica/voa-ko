@@ -1,5 +1,8 @@
 
 import * as React from 'react'
+import { push } from 'react-router-redux'
+import store from 'redux-store'
+import toggleCircumventionDrawer from 'redux-store/actions/toggleCircumventionDrawer'
 import * as moment from 'moment'
 
 import { setAnalyticsOptions } from '@voiceofamerica/voa-shared/helpers/analyticsBindings'
@@ -38,9 +41,38 @@ export const categorySettingsLabels = {
 }
 
 export const circumventionDrawerLabels = {
-  content: (
+  enabledContent: (
     <div>
-      VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
+      <p>
+        VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
+      </p>
+      <p>
+        Using Secure VPN.
+      </p>
+      <p>
+        You can change this in
+        <a href='#' onClick={() => {
+          store.dispatch(push('/settings'))
+          store.dispatch(toggleCircumventionDrawer({ open: false }))
+        }}>Settings</a>.
+      </p>
+    </div>
+  ),
+  disabledContent: (
+    <div>
+      <p>
+        VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
+      </p>
+      <p>
+        Secure VPN is off.
+      </p>
+      <p>
+        You can change this in
+        <a href='#' onClick={() => {
+          store.dispatch(push('/settings'))
+          store.dispatch(toggleCircumventionDrawer({ open: false }))
+        }}>Settings</a>.
+      </p>
     </div>
   ),
 }
@@ -119,6 +151,11 @@ export const settingsLabels = {
   feedbackSubject: encodeURIComponent('VOA 뉴스 앱 의견 보내기'),
   feedbackBody: encodeURIComponent('VOA 뉴스 앱에 보내는 의견:\n'),
   shareMessage: 'VOA 뉴스 앱을 추천합니다',
+  psiphon: 'Secure VPN',
+  psiphonOn: 'On',
+  psiphonOff: 'Off',
+  takeEffectOnRestart: 'You must restart the app for your changes to take effect.',
+  okay: 'Okay',
 }
 
 export const textSettingsLabels = {

@@ -91,8 +91,8 @@ export const mediaSettingsLabels = {
 }
 
 export const programsScreenLabels = {
-  videos: 'Video',
-  audio: 'Audio',
+  videos: '주문형 비디오',
+  audio: '주문형 오디오',
   empty: '콘텐츠를 준비 중입니다',
 }
 

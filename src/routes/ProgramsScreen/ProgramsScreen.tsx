@@ -1,7 +1,7 @@
 
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
-import TopNav, { TopNavItem, StaticItem } from '@voiceofamerica/voa-shared/components/TopNav'
+import TopNav, { TopNavItem, StaticItem, CenterText } from '@voiceofamerica/voa-shared/components/TopNav'
 import ThemeProvider from '@voiceofamerica/voa-shared/components/ThemeProvider'
 
 import analytics, { AnalyticsProps } from '@voiceofamerica/voa-shared/helpers/analyticsHelper'
@@ -13,13 +13,15 @@ import TopNavTheme from './TopNavTheme'
 import Params from './Params'
 import VideoPrograms from './VideoPrograms'
 import AudioPrograms from './AudioPrograms'
+import YouTube from './YouTube'
 import { programsScreen, programTypeNav, typeItem, active } from './ProgramsScreen.scss'
 
-type ProgramType = 'audio' | 'video'
+type ProgramType = 'audio' | 'video' | 'youtube'
 
+const YOUTUBE: ProgramType = 'youtube'
 const VIDEO: ProgramType = 'video'
 const AUDIO: ProgramType = 'audio'
-const DEFAULT = VIDEO
+const DEFAULT = YOUTUBE
 
 const VIDEO_ZONES: Category[] = [
   {
@@ -119,6 +121,8 @@ class ProgramsScreen extends React.Component<Props> {
       return <VideoPrograms history={history} zoneId={this.getZoneId()} />
     } else if (type === AUDIO) {
       return <AudioPrograms history={history} zoneId={this.getZoneId()} />
+    } else if (type === YOUTUBE) {
+      return <YouTube />
     } else {
       throw new Error(`Invalid programType ${type}`)
     }
@@ -129,6 +133,9 @@ class ProgramsScreen extends React.Component<Props> {
 
     return (
       <div className={programTypeNav}>
+        <div className={type === YOUTUBE ? `${typeItem} ${active}` : typeItem} onClick={() => this.setProgramType(YOUTUBE)}>
+          {programsScreenLabels.youtube}
+        </div>
         <div className={type === VIDEO ? `${typeItem} ${active}` : typeItem} onClick={() => this.setProgramType(VIDEO)}>
           {programsScreenLabels.videos}
         </div>
@@ -163,6 +170,14 @@ class ProgramsScreen extends React.Component<Props> {
       return this.renderTopNavFromItems(VIDEO_ZONES)
     } else if (type === AUDIO) {
       return this.renderTopNavFromItems(AUDIO_ZONES)
+    } else if (type === YOUTUBE) {
+      return (
+        <ThemeProvider value={TopNavTheme}>
+          <TopNav flex>
+            <CenterText>VOA 한국어</CenterText>
+          </TopNav>
+        </ThemeProvider>
+      )
     } else {
       throw new Error(`Unrecognized program type ${type}`)
     }

@@ -1,5 +1,8 @@
 {
-  "lastModified": "2018-03-28T20:48:40.013Z",
+  "lastModified": "2018-07-13T16:15:14.052Z",
+  "marketingCloud": {
+    "org": "518ABC7455E462B97F000101@AdobeOrg"
+  },
   "target": {
     "clientCode": "",
     "timeout": 5
@@ -11,10 +14,10 @@
   },
   "acquisition": {
     "server": "c00.adobe.com",
-    "appid": "88195dbef58d470d401359955931322a53db83d566e2185192c38e6080b65687"
+    "appid": "cd59c8be103ba2f8ca76873764eb50b44c62c0d0c03ab1896fc03d644106353d"
   },
   "analytics": {
-    "rsids": "bbgvoa.mandarin.streaming.app",
+    "rsids": "bbgvoa.korean.streaming.app",
     "server": "bbg.sc.omtrdc.net",
     "ssl": false,
     "offlineEnabled": true,
@@ -30,7 +33,7 @@
   },
   "messages": [],
   "remotes": {
-    "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5abbffca64746d5370000c68.json",
-    "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5abbffca64746d4a02003974.json"
+    "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5b48cfb164746d1549000972.json",
+    "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5b48cfb164746d144100089b.json"
   }
 }

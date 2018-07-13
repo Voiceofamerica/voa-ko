@@ -94,6 +94,7 @@ export default class App extends React.Component<{}, State> {
   }
 
   private ready = () => {
+    console.log('app ready')
     this.setState({ appReady: true }, () => {
       const splash = (navigator as any).splashscreen
       if (splash) {

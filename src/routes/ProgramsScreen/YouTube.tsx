@@ -151,7 +151,6 @@ class YouTubePrograms extends React.Component<{}, State> {
         }
       })
       .then(content => {
-        console.log(content)
         this.setState({ videos: content.items, error: null })
       })
       .catch(error => {

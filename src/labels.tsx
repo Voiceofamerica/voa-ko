@@ -50,11 +50,10 @@ export const circumventionDrawerLabels = {
         Using Secure VPN.
       </p>
       <p>
-        You can change this in
         <a href='#' onClick={() => {
           store.dispatch(push('/settings'))
           store.dispatch(toggleCircumventionDrawer({ open: false }))
-        }}>Settings</a>.
+        }}>You can change this inSettings</a>.
       </p>
     </div>
   ),
@@ -67,11 +66,10 @@ export const circumventionDrawerLabels = {
         Secure VPN is off.
       </p>
       <p>
-        You can change this in
         <a href='#' onClick={() => {
           store.dispatch(push('/settings'))
           store.dispatch(toggleCircumventionDrawer({ open: false }))
-        }}>Settings</a>.
+        }}>You can change this inSettings</a>.
       </p>
     </div>
   ),

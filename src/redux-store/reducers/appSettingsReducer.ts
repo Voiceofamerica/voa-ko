@@ -57,40 +57,20 @@ export const INITIAL_STATE: AppSettings = {
       name: '한반도',
     },
     {
+      id: 5460,
+      name: 'VOA 뉴스',
+    },
+    {
       id: 5350,
       name: '워싱턴 톡',
-    },
-    {
-      id: 5299,
-      name: 'VOA Now',
-    },
-    {
-      id: 5306,
-      name: '스냅샷 서울',
-    },
-    {
-      id: 3549,
-      name: 'English Reports',
-    },
-    {
-      id: 2698,
-      name: '세계',
     },
     {
       id: 5425,
       name: '글로벌 리포트',
     },
     {
-      id: 3569,
-      name: '오늘의 사진',
-    },
-    {
       id: 5329,
       name: 'Speak Easy English',
-    },
-    {
-      id: 5190,
-      name: 'Everyday Grammar',
     },
   ],
   mediaPlaybackRate: 1,

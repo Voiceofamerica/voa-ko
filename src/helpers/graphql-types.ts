@@ -2,14 +2,21 @@
 //  This file was automatically generated and should not be edited.
 
 export enum Audience {
+  am = "am",
+  bo = "bo",
   en = "en",
   enus = "enus",
+  es = "es",
   fa = "fa",
   ko = "ko",
+  om = "om",
+  prs = "prs",
+  pus = "pus",
+  ru = "ru",
+  tg = "tg",
   ur = "ur",
   vi = "vi",
   zhcn = "zhcn",
-  zhtw = "zhtw",
 }
 
 
@@ -207,22 +214,21 @@ export type HomeRouteQuery = {
 
 export type ProgramAudioQueryVariables = {
   source: Audience,
-  zone?: number | null,
+  category?: number | null,
 };
 
 export type ProgramAudioQuery = {
-  content:  Array< {
+  audioProgram:  Array< {
     id: number,
-    pubDate: string,
+    date: string | null,
+    zone: number | null,
     image:  {
       tiny: string,
       hero: string,
     } | null,
-    audio:  {
-      url: string | null,
-      audioTitle: string | null,
-      audioDescription: string | null,
-    } | null,
+    url: string | null,
+    programTitle: string | null,
+    programDescription: string | null,
   } | null > | null,
 };
 

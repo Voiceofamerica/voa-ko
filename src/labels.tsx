@@ -47,13 +47,13 @@ export const circumventionDrawerLabels = {
         VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
       </p>
       <p>
-        Using Secure VPN.
+        VOA와 익명으로 연결됐습니다.
       </p>
       <p>
         <a href='#' onClick={() => {
           store.dispatch(push('/settings'))
           store.dispatch(toggleCircumventionDrawer({ open: false }))
-        }}>You can change this inSettings</a>.
+        }}>설정에서 변경할 수 있습니다</a>.
       </p>
     </div>
   ),
@@ -63,13 +63,13 @@ export const circumventionDrawerLabels = {
         VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
       </p>
       <p>
-        Secure VPN is off.
+        VPN 연결이 해제됐습니다.
       </p>
       <p>
         <a href='#' onClick={() => {
           store.dispatch(push('/settings'))
           store.dispatch(toggleCircumventionDrawer({ open: false }))
-        }}>You can change this inSettings</a>.
+        }}>설정에서 변경할 수 있습니다</a>.
       </p>
     </div>
   ),
@@ -127,6 +127,11 @@ export const programsScreenLabels = {
   youtube: 'YouTube',
 }
 
+export const psiphonLoadingLabels = {
+  bold: '',
+  text: '사용자를 위한 최적의 정보를 모으고 있습니다.',
+}
+
 export const pullToRefreshLabels = {
   pull: '화면 끌어내려서 새로 고침',
   release: '화면 끌어내려서 새로 고침',
@@ -150,11 +155,11 @@ export const settingsLabels = {
   feedbackSubject: encodeURIComponent('VOA 뉴스 앱 의견 보내기'),
   feedbackBody: encodeURIComponent('VOA 뉴스 앱에 보내는 의견:\n'),
   shareMessage: 'VOA 뉴스 앱을 추천합니다',
-  psiphon: 'Secure VPN',
-  psiphonOn: 'On',
-  psiphonOff: 'Off',
-  takeEffectOnRestart: 'You must restart the app for your changes to take effect.',
-  okay: 'Okay',
+  psiphon: '안전한 VPN 연결',
+  psiphonOn: '켜기',
+  psiphonOff: '끄기',
+  takeEffectOnRestart: '설정 변경을 적용하려면 앱을 다시 시작해야 합니다.',
+  okay: 'OK',
 }
 
 export const textSettingsLabels = {

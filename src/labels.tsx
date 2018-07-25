@@ -14,7 +14,7 @@ setAnalyticsOptions({
   language: 'Korean',
   languageService: 'VOA Korea Service',
   propertyName: 'voa korean news app',
-  propertyId: 'something',
+  propertyId: '350',
   rsidAccount: 'bbgvoa.korean.streaming.app',
   reportSuite: 'bbgvoa.korean.streaming.app',
 })

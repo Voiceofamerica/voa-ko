@@ -13,7 +13,7 @@ import { Audience } from 'helpers/graphql-types'
 setAnalyticsOptions({
   language: 'Korean',
   languageService: 'VOA Korea Service',
-  propertyName: 'Korean',
+  propertyName: 'voa korean news app',
   propertyId: 'something',
   rsidAccount: 'bbgvoa.korean.streaming.app',
   reportSuite: 'bbgvoa.korean.streaming.app',

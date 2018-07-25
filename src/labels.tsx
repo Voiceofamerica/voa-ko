@@ -36,7 +36,7 @@ export const categorySettingsLabels = {
   myCategories: '맞춤 카테고리',
   allCategories: '전체 카테고리',
   dragAndDrop: '원하는 카테고리를 이곳으로 이동하세요',
-  headlinesFirst: '주요 뉴스 위치',
+  headlinesFirst: '한반도 주요 뉴스 위치',
   cancel: '취소',
 }
 
@@ -91,7 +91,7 @@ export const favoritesSettingsLabels = {
 }
 
 export const homeLabels = {
-  headlines: '주요 뉴스',
+  headlines: '한반도 주요 뉴스',
   search: '검색',
   manage: '+',
 }

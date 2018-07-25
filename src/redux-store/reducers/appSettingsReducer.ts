@@ -53,10 +53,6 @@ const actors: ActorMap<AppSettings> = {
 export const INITIAL_STATE: AppSettings = {
   categories: [
     {
-      id: 2712,
-      name: '한반도 주요 뉴스',
-    },
-    {
       id: 5460,
       name: '뉴스 영상',
     },

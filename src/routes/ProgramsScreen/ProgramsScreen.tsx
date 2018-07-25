@@ -71,26 +71,14 @@ const AUDIO_ZONES: Category[] = [
     id: 4420,
     name: '생방송 여기는 워싱턴입니다',
   },
-  // {
-  //   id: 2709,
-  //   name: '구석구석 미국 이야기',
-  // },
   {
-    id: 4935,
-    name: 'VOA 이야기 미국사',
+    id: 5387,
+    name: '출발 뉴스 쇼',
   },
-  // {
-  //   id: 5149,
-  //   name: '타박타박 미국 여행',
-  // },
-  // {
-  //   id: 5150,
-  //   name: '인물 아메리카',
-  // },
-  // {
-  //   id: 5148,
-  //   name: '나는 미국인입니다',
-  // },
+  {
+    id: 2722,
+    name: '워싱턴 뉴스 광장',
+  },
 ]
 
 interface Props extends RouteComponentProps<Params>, AnalyticsProps {

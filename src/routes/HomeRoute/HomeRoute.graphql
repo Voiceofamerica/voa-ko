@@ -1,5 +1,5 @@
 query HomeRoute($source: Audience!) {
-  content(source: $source, type: [PhotoGallery, Article, Clip], topNews: true) {
+  content(source: $source, zoneId: 2712, type: [Article, Video, PhotoGallery, Clip]) {
     id
     title
     introduction
@@ -11,7 +11,6 @@ query HomeRoute($source: Audience!) {
     }
     video {
       url
-      relType
     }
     audio {
       url

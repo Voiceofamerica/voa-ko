@@ -54,23 +54,19 @@ export const INITIAL_STATE: AppSettings = {
   categories: [
     {
       id: 2712,
-      name: '한반도',
+      name: '한반도 주요 뉴스',
     },
     {
       id: 5460,
-      name: 'VOA 뉴스',
+      name: '뉴스 영상',
     },
     {
-      id: 5350,
-      name: '워싱턴 톡',
-    },
-    {
-      id: 5425,
-      name: '글로벌 리포트',
+      id: 2698,
+      name: '세계 주요 뉴스',
     },
     {
       id: 5329,
-      name: 'Speak Easy English',
+      name: '영어 교실',
     },
   ],
   mediaPlaybackRate: 1,

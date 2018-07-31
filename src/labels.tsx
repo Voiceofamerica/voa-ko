@@ -44,7 +44,7 @@ export const circumventionDrawerLabels = {
   enabledContent: (
     <div>
       <p>
-        VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
+        VOA 뉴스 앱은 Psiphon의 '우회' 프록시 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
       </p>
       <p>
         VOA와 익명으로 연결됐습니다.
@@ -60,10 +60,10 @@ export const circumventionDrawerLabels = {
   disabledContent: (
     <div>
       <p>
-        VOA 뉴스 앱은 Psiphon의 '우회' VPN 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
+        VOA 뉴스 앱은 Psiphon의 '우회' 프록시 기술을 사용해서 여러분의 개인 정보와 익명성을 보호합니다
       </p>
       <p>
-        VPN 연결이 해제됐습니다.
+        프록시 연결이 해제됐습니다.
       </p>
       <p>
         <a href='#' onClick={() => {
@@ -106,7 +106,7 @@ export const mediaPlayerLabels = {
     <div>
       <p>
         선택한 오디오/비디오를 재생하는 곳입니다.
-        뉴스 본문을 읽는 동안 재생 중인 오디오/비디오 창을 끌어내려서 닫았다가, 원할 때 다시 열어서 계속 재생할 수 있습니다.
+        기사를 읽는 동안 재생 중인 오디오/비디오 창을 닫았다가, 원할 때 다시 열어서 계속 재생할 수 있습니다.
       </p>
     </div>
   ),
@@ -155,7 +155,7 @@ export const settingsLabels = {
   feedbackSubject: encodeURIComponent('VOA 뉴스 앱 의견 보내기'),
   feedbackBody: encodeURIComponent('VOA 뉴스 앱에 보내는 의견:\n'),
   shareMessage: 'VOA 뉴스 앱을 추천합니다',
-  psiphon: '안전한 VPN 연결',
+  psiphon: '안전한 프록시 연결',
   psiphonOn: '켜기',
   psiphonOff: '끄기',
   takeEffectOnRestart: '설정 변경을 적용하려면 앱을 다시 시작해야 합니다.',

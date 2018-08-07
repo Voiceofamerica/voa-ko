@@ -123,8 +123,8 @@ export const mediaSettingsLabels = {
 }
 
 export const programsScreenLabels = {
-  videos: '주문형 비디오',
-  audio: '주문형 오디오',
+  videos: '비디오',
+  audio: '오디오',
   empty: '콘텐츠를 준비 중입니다',
   youtube: 'YouTube',
 }

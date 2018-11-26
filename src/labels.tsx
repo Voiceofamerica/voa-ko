@@ -125,8 +125,7 @@ export const mediaSettingsLabels = {
 export const programsScreenLabels = {
   videos: '비디오',
   audio: '오디오',
-  empty: '콘텐츠를 준비 중입니다',
-  youtube: 'YouTube',
+  empty: '콘텐츠를 준비 중입니다'
 }
 
 export const psiphonLoadingLabels = {
